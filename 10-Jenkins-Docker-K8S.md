@@ -124,7 +124,7 @@ sudo usermod -aG docker jenkins
 sudo systemctl restart jenkins
 sudo docker version
 ```
-# Step - 8 : Install AWS CLI in JENKINS Server #
+# Step - 7 : Install AWS CLI in JENKINS Server #
 
 URL : https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html  
 
@@ -137,7 +137,7 @@ sudo ./aws/install
 aws --version
 ```
  
-# Step - 9 : Install Kubectl in JENKINS Server #
+# Step - 8 : Install Kubectl in JENKINS Server #
 **Execute below commands in Jenkins server to install kubectl**
 
 ```
@@ -147,7 +147,7 @@ sudo mv ./kubectl /usr/local/bin
 kubectl version --short --client
 ```
 
-# Step - 10 : Update EKS Cluster Config File in Jenkins Server #
+# Step - 9 : Update EKS Cluster Config File in Jenkins Server #
 	
 1) Execute below command in Eks Management host & copy kube config file data <br/>
 	$ cat .kube/config 
@@ -173,7 +173,7 @@ kubectl version --short --client
 
 **Note: We should be able to see EKS cluster nodes here.**
 
-# Step - 11 : Create Jenkins CI CD Job #
+# Step - 10 : Create Jenkins CI CD Job #
 
 - **Stage-1 : Clone Git Repo** <br/> 
 - **Stage-2 : Maven Build** <br/>
@@ -215,10 +215,10 @@ pipeline {
 
 ```
 	
-# Step - 12 : Access Application in Browser #
+# Step - 11 : Access Application in Browser #
 - **We should be able to access our application** <br/>
 URL : http://LBR/context-path/
 	
 # We are done with our Setup #
 	
-## Step - 13: After your practise, delete Cluster and other resources we have used in AWS Cloud to avoid billing ##
+## Step - 12: After your practise, delete Cluster and other resources we have used in AWS Cloud to avoid billing ##
