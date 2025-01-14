@@ -168,6 +168,7 @@ kubectl version --short --client
 
         $ mkdir -p ~/.kube
         $ touch ~/.kube/config
+        $ sudo vi .kube/config
 
 
 5) check eks nodes <br/>
