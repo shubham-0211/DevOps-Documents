@@ -163,7 +163,9 @@ kubectl version --short --client
 	$ ls -la  <br/>
 	$ sudo vi .kube/config  <br/>
 
-** Note: If the folder and file do not exist then create it.**
+      Note: If the folder and file do not exist then create it.
+
+
         $ mkdir -p ~/.kube
         $ touch ~/.kube/config
 
